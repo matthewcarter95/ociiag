@@ -5,14 +5,17 @@ Java class that goes through all of the compartments in a tenant and shows
 
 <meta-verb> <resource> in <compartment>
 
-statement fragments for the groups that a specified user belongs to (including any-user).  Would that help you in the short term? 
+statement fragments for the groups that a specified user belongs to (including any-user)
 
+Usage:
 
-%>java -jar WhatUserHasAccessTo.jar ocid1.user.oc1..aaaaaaaaope4f3ocxezv4effbvknma4jjqxbdd4eyyzce4cgqo5nbpkyxswq
-User matt.carter@oracle.com belongs to groups:
-------------
-grafana
-InstanceLaunchers
+java -jar WhatUserHasAccessTo.jar ocid1.user.oc1..aaaaaaaaope4f3ocxezv4effbvknma4jjqxbdd4eyyzce4cgqo5nbpkyxswq
+
+Output:
+
+  User matt.carter@oracle.com belongs to groups:
+    grafana
+    InstanceLaunchers
 
 ----All permissions for user -----
 read metrics in tenancy
